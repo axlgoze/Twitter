@@ -1,4 +1,4 @@
-}const User = require('./../../app/models/User')
+const User = require('./../../app/models/User')
 
 describe('Test for Setters', () =>{
 	test('4) Add setters', () =>{
