@@ -25,14 +25,12 @@ class User{
 	}
 
 	//setters
-	/*
 	set setUsername(newUsername){
 	   this.username = newUsername
 	}
 	set setBio(newBio){
 	   this.bio = newBio
 	}
-	*/
 }
 
 //exportando modulo
