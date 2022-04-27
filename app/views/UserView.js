@@ -2,9 +2,17 @@
 const UserService = require('./../services/UserService')
 
 class UserView{
-	static createUser(user){
-		return new UserService(1,"AxelFlores","Brayan","Sin bio")
+	static createUser(payload){
+		if(payload == null){
+			console.log("Null is Error")
+			return {error: "payload no existe"}
+		}else if(typeof payload.username === 'string' && typeof payload.name === 'string' && typeof payload.id === 'number'){
+		    return UserService.create(payload.id, payload.username, payload.name)
+		 }else{
+		     return {error: "Error, las propiedades del payload necesitan tener un valor válido"}
+		  }
 	}
+	
 }
 
 //exportando clase
