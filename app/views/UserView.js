@@ -1,9 +1,9 @@
 //importando modulo necesario que llama a su vez al modulo user
-cont UserService = require('./../service/UserService')
+const UserService = require('./../services/UserService')
 
 class UserView{
 	static createUser(user){
-		new user(1,"AxelFlores","Brayan")
+		return new User(1,"AxelFlores","Brayan","Sin bio")
 	}
 }
 
