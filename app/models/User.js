@@ -9,3 +9,6 @@ class User{
 
 	}
 }
+
+//exportando modulo
+module.exports = User
