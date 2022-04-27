@@ -1,5 +1,5 @@
 //importando clase que necesitaremos para hacer pruebas
-const UserView require('./../../app/views/UserView')
+const UserView = require('./../../app/views/UserView')
 
 describe('Test for UserView class', () =>{
 	test('0) Create an empty object', ()=>{
