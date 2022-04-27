@@ -29,7 +29,7 @@ describe('Test for UserService Class', () =>{
 	test('3) updating username value',() =>{
 	const user = UserService.create(1,"NickCave","Nick")
 	UserService.updateUserName(user, "CaveNick")
-	expect(user.userName).toBe("CaveNick")
+	expect(user.username).toBe("CaveNick")
 	});
 })
 
