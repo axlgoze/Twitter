@@ -1,11 +1,13 @@
 const User = require('./../../app/services/UserService')
 
 describe('Test for UserService Class', () =>{
-	test('Create an UserService Object', () =>{
+	test('Create  empty Object', () =>{
 		//código a probar
-		const userService = new UserService('id','userName','name','bio','dateCreated','lastUpdated')
-		//recivido--esperado
-		expect(userService.id).not.toBeUndefined()
+		const user = new UserService('id','username','name')
+		//recibido--esperado
+		expect(user.id).not.toBeUndefined()
+		expect(user.userName).not.toBeUndefined()
+		expect(user.name).not.toBeUndefined()
 	});
 })
 
