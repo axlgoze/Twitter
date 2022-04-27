@@ -4,3 +4,5 @@ const User = require('./../models/user')
 class UserService{
 
 }
+
+module.exports = UserService
