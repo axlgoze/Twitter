@@ -19,6 +19,6 @@ describe('Test for UserView class', () =>{
 	test('2) Return an error objetct when try to create a new user with a payload whit invalid propierties', ()=>{
 		const payload ={username: null, name: 12, id: "id"}
 		const result = UserView.createUser(payload)
-		expect(result.error).toMatch(/necesitan tener una valor válido/)
+		expect(result.error).toMatch(/Ups, Las propiedades necesitan tener un valor válido/)
 	});
 })
