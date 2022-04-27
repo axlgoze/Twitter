@@ -6,7 +6,7 @@ describe('Test for UserService Class', () =>{
 		const user = new UserService('id','username','name')
 		//recibido--esperado
 		expect(user.id).not.toBeUndefined()
-		expect(user.userName).not.toBeUndefined()
+		expect(user.username).not.toBeUndefined()
 		expect(user.name).not.toBeUndefined()
 	});
 })
