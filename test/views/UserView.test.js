@@ -3,12 +3,12 @@ const UserView = require('./../../app/views/UserView')
 
 describe('Test for UserView class', () =>{
 	test('0) Create an empty object', ()=>{
-		const user = UserView.createUser(1,"AxelFlores","Brayan")
-		expect(user.id).not.toBeUndefined()
-		expect(user.username).not.toBeUndefined()
-		expect(user.name).not.toBeUndefined()
-		expect(user.bio).not.toBeUndefined()
-		expect(user.lastUpdated).not.toBeUndefined()
-		expect(user.dateCreated).not.toBeUndefined()
+		const user = UserView.createUser()
+		expect(user.id).toBeUndefined()
+		expect(user.username).toBeUndefined()
+		expect(user.name).toBeUndefined()
+		expect(user.bio).toBeUndefined()
+		expect(user.lastUpdated).toBeUndefined()
+		expect(user.dateCreated).toBeUndefined()
 	});
 })

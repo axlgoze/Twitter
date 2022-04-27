@@ -3,7 +3,7 @@ const UserService = require('./../services/UserService')
 
 class UserView{
 	static createUser(user){
-		return new User(1,"AxelFlores","Brayan","Sin bio")
+		return new UserService(1,"AxelFlores","Brayan","Sin bio")
 	}
 }
 
