@@ -23,6 +23,14 @@ class User{
 	get getLastUpdated(){
 	   return this.lastUpdated
 	}
+
+	//setters
+	set setUsername(newUsername){
+	   this.username = newUsername
+	}
+	set setBio(newBio){
+	   this.bio = newBio
+	}
 }
 
 //exportando modulo
