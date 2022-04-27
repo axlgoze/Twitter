@@ -21,10 +21,10 @@ describe('Test for UserService Class', () =>{
 		const user = UserService.create(1,"JhonnyReyes","Jhon")
 		//alamacena lista del 'user' usando metodo getInfo()
 		const userInfoList = UserService.getInfo(user)
-		expect(userInfoList.[0]).toBe(1)
-		expect(userInfoList.[1]).toBe("JhonnyReyes")
-		expect(userInfoList.[2]).toBe("Jhon")
-		expect(userInfoList.[3]).toBe("Sin bio")
+		expect(userInfoList[0]).toBe(1)
+		expect(userInfoList[1]).toBe("JhonnyReyes")
+		expect(userInfoList[2]).toBe("Jhon")
+		expect(userInfoList[3]).toBe("Sin bio")
 	});
 })
 
