@@ -7,7 +7,7 @@
 - [instagram](https://www.instagram.com/axlze/)
 - [linkedin](https://www.linkedin.com/in/axl-reyes-b6914b219/)
 
-### Requerimientos
+### Requerimientos Primer Sprint
 
 ```markdown
 
@@ -28,3 +28,14 @@ SPRINT 1: Creación de un modelo
  Solución: Agrega los setters usando la palabra `set` y modificando el atributo indicado.
 ```
 
+## Requerimientos Segundo Sprint: Interacción con el modelo
+
+```
+Requerimiento 1: Crear un nuevo usuario con lo ya definido en el sprint anterior, usando una nueva clase llamada `UserService`.
+Criterios de aceptación:
+1. Esta clase deberá tener un método `create` que se pueda usar sin instanciar (static method), y que reciba solo los parámetros del `id`, `username` y `name`. 
+2. El valor de `bio` deberá ser por default para todos los `user` creados.
+Requerimiento 2: Agregar un nuevo método estático en `UserService` llamado `getInfo` que al recibir un objeto de la clase `User`, me regrese una lista con todos los valores de los atributos de dicho objeto.
+Requerimiento 3: Agregar un nuevo método estático en `UserService` llamado `updateUserUsername`, que reciba un objeto de la clase `User` y un nuevo string, que actualizará el valor de `username`. 
+Requerimiento 4: Agregar un nuevo método estático en `UserService` llamado `getAllUsernames`, que recibirá una lista de objetos de la clase `User`, y regresará la lista de todos los usernames de dichos objetos. 
+```
