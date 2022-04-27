@@ -1,4 +1,4 @@
-const User = require('./../app/models/User')
+const User = require('./../../app/models/User')
 
 describe("Unit test for User class", () => {
 	test('Create an User object', () => {
@@ -8,7 +8,7 @@ describe("Unit test for User class", () => {
 	   //results validaton
 	   //comparacion que iguala el valor izquierdo con el valor derecho (esperado)
 	   expect(user.id).toBe(1)
-	   expect(user.username).toBe("Axel Reyes")
+	   expect(user.username).toBe("Axl Reyes")
 	   expect(user.name).toBe("Axel")
 	   expect(user.bio).toBe("Bio")
 	   expect(user.dateCreated).toBe("dateCreated")
