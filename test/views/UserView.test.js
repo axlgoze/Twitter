@@ -13,7 +13,7 @@ describe('Test for UserView class', () =>{
 	});
 	test('1) Return an error object when try to create a new user with an null payload',()=>{
 		const payload = null
-		const result = UseView.createUser(payload)
+		const result = UserView.createUser(payload)
 		expect(result.error).toMatch(/payload no existe/)
 	});
 })
