@@ -21,10 +21,10 @@ describe('Test for UserView class', () =>{
 		const result = UserView.createUser(payload)
 		expect(result.error).toMatch(/Ups, Las propiedades necesitan tener un valor válido/)
 	});
-	test('3) Return an error object when try to create a new user with a payload with mission propierties' () =>{
+	test('3) Return an error object when try to create a new user with a payload with mission propierties', () =>{
 		const payload = {username: "Username"}
 		const result = UserView.createUser(payload)
-		expect(result.error).toMatch(/necesitan tener un valor válido/)
+		expect(result.error).toMatch(/Ups, Las propiedades del payload necesitan tener un valor válido/)
 	});
 
 })
